@@ -19,6 +19,7 @@ Introducing <a href="https://github.com/petermikitsh/stencil-react">stencil-reac
 - custom element events, 
 - react synthetic events (e.g., `onClick`), and 
 - `aria-*` attributes
+- TypeScript typings
 
 All through the standard React interface you're familiar with. Suppose we had a `Button` web component in our Stencil project `@anjuna/core`. Here's the React usage:
 
