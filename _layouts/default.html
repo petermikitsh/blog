@@ -6,8 +6,6 @@
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
-<title>{{ page.title }} | {{site.name}}</title>
-
 {% seo %}
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -67,11 +65,11 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
+                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                <a class="nav-link" href="https://twitter.com/petermikitsh">Twitter</a>
                 </li>
 
                 <li class="nav-item">
@@ -97,12 +95,18 @@ ga('send', 'pageview');
 
 <!-- Site Title
 ================================================== -->
-{% if page.url == "/" or page.url == "/about" %}
+{% if page.url == "/" %}
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
+</div>
+{% endif %}
+
+{% if page.url == "/categories" %}
+<div class="mainheading">
+    <h1 class="sitetitle">Categories</h1>
 </div>
 {% endif %}
 
